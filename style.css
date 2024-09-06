@@ -14,19 +14,17 @@ body {
     width: 100%;
     height: auto;
     background-image: url(/bg.jpg);
-    background-size: 100%;
-    /* background-repeat: no-repeat; */
+    background-size: cover;
 }
 
 /* Asosiy container */
 .container {
-    width: 1000px;
+    width: 100%;
+    max-width: 1200px;
     height: 100vh;
-    /* Height avtomatik o'lchamda bo'ladi */
     background-color: rgba(255, 255, 255, 0.8);
     margin: 0 auto;
     overflow-x: hidden;
-    /* Gorizontal scrollni yo'q qilish */
     overflow-y: auto;
 }
 
@@ -35,7 +33,6 @@ body {
     height: auto;
     margin: 0 auto;
     padding-top: 50px;
-
 }
 
 .cart-top {
@@ -72,5 +69,94 @@ body {
     display: block;
     max-height: 4000px;
     overflow-y: auto;
-    /* Vertikal scroll imkoniyati */
+}
+
+/* Flexbox uchun responsive kodlar */
+
+/* Mobil ekranlar uchun (max-width: 600px) */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .cart {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .cart-top i {
+        font-size: 18px;
+    }
+
+    .cart-content li {
+        padding: 10px;
+    }
+
+    body {
+        background-size: cover;
+    }
+}
+
+/* Planshet ekranlar uchun (max-width: 900px) */
+@media (max-width: 900px) {
+    .container {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .cart {
+        width: 95%;
+        padding-top: 30px;
+    }
+
+    .cart-top i {
+        font-size: 20px;
+    }
+
+    .cart-content li {
+        padding: 15px;
+    }
+}
+
+/* Kichik laptop ekranlar (max-width: 1200px) */
+@media (max-width: 1200px) {
+    .container {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .cart {
+        width: 90%;
+        padding-top: 40px;
+    }
+
+    .cart-content li {
+        padding: 18px;
+    }
+}
+
+/* Juda kichik ekranlar uchun (max-width: 400px) */
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+        height: 100vh;
+    }
+
+    .cart {
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .cart-top h2 {
+        font-size: 16px;
+    }
+
+    .cart-top i {
+        font-size: 16px;
+    }
+
+    .cart-content li {
+        padding: 8px;
+    }
 }
