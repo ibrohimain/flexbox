@@ -1,0 +1,76 @@
+/* Barcha elementlarning asosiy o'rnatmalari */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "SUSE", sans-serif;
+}
+
+/* Google Fonts-dan shriftni import qilish */
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+/* Body uchun stil */
+body {
+    width: 100%;
+    height: auto;
+    background-image: url(/bg.jpg);
+    background-size: 100%;
+    /* background-repeat: no-repeat; */
+}
+
+/* Asosiy container */
+.container {
+    width: 1000px;
+    height: 100vh;
+    /* Height avtomatik o'lchamda bo'ladi */
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 0 auto;
+    overflow-x: hidden;
+    /* Gorizontal scrollni yo'q qilish */
+    overflow-y: auto;
+}
+
+.cart {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 50px;
+
+}
+
+.cart-top {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.cart-top h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cart-top i {
+    font-size: 22px;
+    padding: 2px 8px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.cart-content {
+    display: none;
+    max-height: 300px;
+    transition: max-height 0.5s ease-out;
+}
+
+.cart-content li {
+    padding: 20px;
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+}
+
+/* Aktiv bo'lganda cart-content */
+.cart-content.active {
+    display: block;
+    max-height: 4000px;
+    overflow-y: auto;
+    /* Vertikal scroll imkoniyati */
+}

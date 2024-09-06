@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cart">
+            <div class="carts">
+                <div class="cart-top">
+                    <i class="fa-solid fa-caret-right toggle-btn"></i>
+                    <h2>Flexbox</h2>
+                </div>
+                <ul class="cart-content">
+                    <li>Flexbox (Flexible Box) — bu CSS'ning zamonaviy joylashtirish texnologiyasi bo'lib,
+                        veb-sahifadagi elementlarni oson va moslashuvchan tarzda tartibga solishga imkon beradi. Flexbox
+                        asosiy maqsadi elementlarni gorizontal yoki vertikal yo'nalishda joylashtirishni soddalashtirish
+                        va turli o'lchamdagi ekranlarga moslashadigan tartib yaratishdir. Flexbox'da ikkita asosiy
+                        komponent mavjud: konteyner (ota element) va flex elementlar (ichidagi bolalar elementlari).
+                    </li>
+                    <li>
+                        Flexbox afzalliklari: <br>
+                        •Elementlarni gorizontal yoki vertikal joylashtirishni soddalashtiradi. <br>
+                        •Har xil ekran o'lchamlari uchun moslashuvchan tartib yaratish imkonini beradi. <br>
+                        •Elementlar orasidagi bo'sh joylarni avtomatik boshqaradi. <br>
+                        •Float va position kabi eski texnikalarga ehtiyojni kamaytiradi. <br>
+                    </li>
+                    <li>
+                        Flexboxning asosiy tushunchalari:
+                        Flex konteyner: Flexbox'ni ishlatmoqchi bo'lgan elementingizni konteyner deb belgilashingiz
+                        kerak. Buning uchun display: flex; xususiyati ishlatiladi. Flex konteyner ichidagi barcha
+                        elementlar avtomatik ravishda flex elementlarga aylanadi va tartiblanadi.
+                    </li>
+                    <li>
+                        Asosiy o'q va kesish o'qi:
+                        Asosiy o'q (main axis): Flex elementlar asosiy o'q bo'ylab joylashadi. <br> Asosiy o'qni
+                        gorizontal
+                        yoki vertikal qilish uchun flex-direction xususiyatidan foydalaniladi: <br>
+                        row: Elementlar chapdan o'ngga (gorizontal) joylashadi (standart qiymat). <br>
+                        column: Elementlar yuqoridan pastga (vertikal) joylashadi. <br>
+                        Kesish o'qi (cross axis): Asosiy o'qga nisbatan perpendikulyar o'q. Masalan, agar asosiy o'q
+                        gorizontal bo'lsa, kesish o'qi vertikal bo'ladi.
+                    </li>
+                    <li>
+                        Joylashuvni boshqarish: <br> <br>
+                        <b> justify-content:</b> Flex elementlarni asosiy o'q bo'ylab joylashtirish uchun ishlatiladi.
+                        <br>
+                        <b>flex-start:</b> Chapga (yoki yuqoriga) qarab joylashadi. <br>
+                        <b>flex-end:</b> O'ngga (yoki pastga) qarab joylashadi. <br>
+                        <b>center:</b> O'rtada joylashadi. <br>
+                        <b>space-between:</b> Elementlar orasida bo'sh joy hosil qiladi. <br>
+                        <b>space-around:</b> Har bir elementning atrofida bo'sh joy hosil qiladi. <br>
+                    </li>
+                    <li>
+                        <b>Align-items:</b> Flex elementlarni kesish o'qi bo'ylab joylashtirish uchun ishlatiladi. <br>
+                        <b>flex-start:</b> Yuqoridan joylashadi (yoki chapdan). <br>
+                        <b>flex-end:</b> Pastdan joylashadi (yoki o'ngdan). <br>
+                        <b>center:</b> O'rtada joylashadi. <br>
+                        <b>stretch:</b> Elementlar konteyner balandligini to'ldiradi. <br>
+                    </li>
+                    <li>
+                        Flex-grow, flex-shrink, va flex-basis: Flex elementlarning o'sishini va qisqarishini boshqaradi.
+                        <br>
+                        <b>flex-grow:</b> Elementning o'sish imkoniyatini belgilaydi. <br>
+                        <b>flex-shrink:</b> Element qisqaradigan miqyosni belgilaydi. <br>
+                        <b>flex-basis:</b> Elementning boshlang'ich o'lchamini belgilaydi. <br>
+                    </li>
+                    <li>
+                        Xulosa: Flexbox bilan tartib yaratish veb-sahifani tezroq va moslashuvchan qilishga yordam
+                        beradi. Ekranlar o'lchami yoki elementlarning o'zgarishiga mos keladigan dizaynlarni sodda va
+                        samarali tarzda yaratishga imkon beradi.
+                    </li>
+                </ul>
+            </div>
+            <div class="carts">
+                <div class="cart-top">
+                    <i class="fa-solid fa-caret-right toggle-btn"></i>
+                    <h2>Flexbox parent&child</h2>
+                </div>
+                <ul class="cart-content">
+                    <li>
+                        Flexbox tizimida ota element (parent) va bola elementlar (child) o'rtasidagi bog'lanish juda
+                        muhim. Flexbox'ning asosiy vazifasi ota element (flex container) ichidagi bola elementlarni
+                        (flex items) moslashuvchan va tartibli ravishda joylashtirishdir
+                    </li>
+                    <li>
+                        Keling, ota (parent) va bola (child) elementlarning qanday ishlashini aniqroq tushuntiramiz.
+                    </li>
+                    <li>
+                        Flexbox Ota Element (Parent)
+                        Ota element — bu flex container deb nomlanadi. Flexbox faqatgina bu konteynerning ichida
+                        joylashgan elementlarga ta’sir qiladi. Ota elementni flex container qilib belgilash uchun CSS'da
+                        display: flex; qoʻllanadi.
+                    </li>
+                    <li>
+                        <pre>
+                            div class="cr"
+                        div class="item" 1 div
+                        div class="item" 2 div
+                        div class="item" 3 div
+                        div
+                        </pre>
+
+                        <pre>
+                               .cr{
+                                display: flex; /* Bu joyda ota element flex konteyner bo'ladi */
+                                }
+                        </pre>
+
+                    </li>
+                    <li>
+                        Flexbox Bola Elementlar (Child)
+                        Ota element ichidagi har bir bola element flex elementga aylanadi. Flexbox yordamida ularni
+                        tartibga solish va moslashuvchan qilib joylashtirish mumkin. Bola elementlar asosiy va kesish
+                        o'qlari bo'ylab joylashtiriladi, va ular mos ravishda turli xususiyatlar orqali boshqariladi.
+                    </li>
+                    <li>
+                        Ota Element (Parent) Xususiyatlari
+                        <b>flex-direction:</b> Flex elementlarning asosiy o'q yo'nalishini belgilaydi. <br>
+                        <b>row:</b> Elementlar gorizontal joylashadi (chapdan o'ngga). <br>
+                        <b>column:</b> Elementlar vertikal joylashadi (yuqoridan pastga). <br>
+                        <b>row-reverse:</b> Gorizontal joylashish, lekin teskari yo'nalishda (o'ngdan chapga). <br>
+                        <b>column-reverse:</b> Vertikal joylashish, lekin teskari yo'nalishda (pastdan yuqoriga). <br>
+
+                    </li>
+                    <li>
+                        <pre>
+                            .container {
+                                display: flex;
+                                flex-direction: row; /* yoki column, row-reverse */
+                              }
+                              
+                        </pre>
+                    </li>
+                    <li>
+                        <b>justify-content:</b> Flex elementlarni asosiy o'q bo'ylab joylashtiradi. <br>
+                        <b>flex-start:</b> Elementlar boshidan joylashadi. <br>
+                        <b>flex-end:</b> Oxirida joylashadi. <br>
+                        <b>center:</b> O'rtada joylashadi. <br>
+                        <b>space-between:</b> Elementlar orasida bo'sh joy qoldiradi. <br>
+                        <b> space-around:</b> Elementlar atrofida teng bo'sh joy hosil qiladi. <br>
+                    </li>
+                    <li>
+                        <pre>
+                            .container {
+                                display: flex;
+                                justify-content: center; /* yoki space-between, flex-start va h.k. */
+                              }                              
+                        </pre>
+                    </li>
+                    <li>
+                        <b>align-items:</b> Flex elementlarni kesish o'qi bo'ylab joylashtiradi (balandlik bo'yicha).
+                        <br>
+                        <b>flex-start:</b> Yuqorida joylashadi. <br>
+                        <b>flex-end:</b> Pastda joylashadi. <br>
+                        <b>center:</b> O'rtada joylashadi. <br>
+                        <b>stretch:</b> Barcha elementlar balandlik bo'yicha cho'ziladi. <br>
+                    </li>
+                    <li>
+                        <pre>
+                            .container {
+                                display: flex;
+                                align-items: stretch; /* yoki center, flex-end */
+                              }
+                              
+                        </pre>
+                    </li>
+                    <li>
+                        <b>flex-wrap:</b> Bola elementlar konteynerdan chiqib ketmaslik uchun o'ralib joylashishini
+                        boshqaradi. <br>
+                        <b>nowrap:</b> Barcha elementlar bitta qatorga joylashadi (standart qiymat). <br>
+                        <b>wrap:</b> Elementlar joy yetmay qolsa, yangi qatorga o'tadi. <br>
+                        <b>wrap-reverse:</b> O'ralish, lekin teskari yo'nalishda. <br>
+                    </li>
+                    <li>
+                        <pre>
+                            .container {
+                                display: flex;
+                                flex-wrap: wrap; /* yoki wrap-reverse */
+                              }
+                              
+                        </pre>
+                    </li>
+
+                    <li>
+                        <b> flex-shrink:</b> Bola element kichrayadigan darajani belgilaydi. 1 qiymati element konteyner
+                        kichiklashganda ham qisqarishini bildiradi.
+                    </li>
+                    <li>
+                        <pre>
+                            .item {
+                                flex-shrink: 1; /* Element konteyner kichrayganda qisqaradi */
+                              }
+                              
+                        </pre>
+                    </li>
+                    <li>
+                        <b>flex-basis: </b>Elementning boshlang'ich o'lchamini belgilaydi (px, %, va h.k.). Bu xususiyat
+                        elementning flex konteynerda qanday joylashishini belgilashda boshlang'ich o'lchovni nazorat
+                        qiladi.
+                    </li>
+                    <li>
+                        <pre>
+                            .item {
+                                flex-basis: 200px; /* Har bir elementning asosiy kengligi 200px bo'ladi */
+                              }
+                              
+                        </pre>
+                    </li>
+                    <li>
+                        <b>align-self:</b> Faqat bitta bola elementning kesish o'qi bo'ylab joylashishini boshqaradi. Bu
+                        align-items ga o'xshash, lekin faqat bitta bola elementga ta'sir qiladi.
+                        flex-start, flex-end, center, stretch
+                    </li>
+                    <li>
+                        <pre>.item {
+                            align-self: center; /* Faqat shu element o'rtaga joylashadi */
+                          }
+                          </pre>
+                    </li>
+                    <li>
+                        div class="cr"
+                        div class="item" 1 div
+                        div class="item" 2 div
+                        div class="item" 3 div
+                        div
+
+                        <pre>
+    .cr {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      
+      .item {
+        flex-grow: 1;
+        flex-basis: 150px;
+        align-self: flex-start;
+      }
+      
+</pre>
+                    </li>
+
+                    <li>
+                        Bu misolda:
+
+                        Ota element (container) flex konteyner bo'lib, bola elementlar o'rtasida teng bo'sh joy yaratadi
+                        (space-around).
+                        Bola elementlar (item) o'sish imkoniyatiga ega (flex-grow: 1) va har bir element boshlang'ichda
+                        150px kenglik oladi (flex-basis: 150px).
+                    </li>
+                    <li>
+                        Xulosa:
+                        Ota element (parent) display: flex; orqali flex konteynerga aylanadi va uning ichidagi har bir
+                        element bola element (child) bo'lib, ular flex xususiyatlariga muvofiq joylashadi.
+                        Ota element asosiy tartibni va joylashuvni belgilaydi, bola elementlar esa o'lchamlari,
+                        joylashuvi, va boshqa xususiyatlari bo'yicha nazorat qilinadi.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
